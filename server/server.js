@@ -23,9 +23,9 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.use('/',(req, res) => {
-    res.send('Welcome to Sarvjeet Anand\'s Portfolio API');
-});
+// app.use('/',(req, res) => {
+//     res.send('Welcome to Sarvjeet Anand\'s Portfolio API');
+// });
 
 // Contact form route
 app.post('/api/contact', async (req, res) => {

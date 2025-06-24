@@ -35,6 +35,8 @@ export default function Contact({ isDark, isVisible }) {
             setContactForm({ name: '', email: '', message: '' });
         } catch (error) {
             setSubmitMessage('Something went wrong. Please try again.');
+            console.log('Error sending message:', error);
+            
         }
 
         setIsSubmitting(false);

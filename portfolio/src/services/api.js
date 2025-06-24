@@ -1,21 +1,17 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+import axios from 'axios';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://portfolio-1-k7ir.onrender.com/';
 
 export const sendContactForm = async (formData) => {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/contact`, {
-      method: 'POST',
+    const response = await axios.post(`${API_BASE_URL}/api/contact`, formData, {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
     });
 
-    if (!response.ok) {
-      throw new Error('Failed to send message');
-    }
-
-    return await response.json();
+    return response.data;
   } catch (error) {
+    // Axios automatically throws for HTTP error status codes (4xx, 5xx)
     throw error;
   }
 };
