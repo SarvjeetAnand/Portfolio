@@ -27,7 +27,7 @@ export default function Skill({isDark}) {
                     >
                         <div className="flex items-center mb-4">
                             <skill.icon className="text-blue-500 mr-3" size={24} />
-                            <span className="font-semibold">{skill.name}</span>
+                            <span className="font-semibold text-sm">{skill.name}</span>
                         </div>
                         <div className={`w-full bg-gray-400 dark:bg-gray-600 rounded-full h-2`}>
                             <div

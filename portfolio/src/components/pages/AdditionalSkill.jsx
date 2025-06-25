@@ -21,14 +21,14 @@ export default function AdditionalSkill({isDark}) {
                 { name: 'C&C++', level: 80, icon: Code },
                 { name: 'HTML', level: 95, icon: Code },
                 { name: 'CSS', level: 80, icon: Palette },
-                { name: 'CSS/Tailwind', level: 88, icon: Palette },
+                { name: 'Tailwind', level: 88, icon: Palette },
                 { name: 'Bootstrap', level: 90, icon: Palette },
                 { name: 'jQuery', level: 75, icon: Code },
                 { name: 'Redux', level: 65, icon: Code },
                 { name: 'Git', level: 85, icon: Code },
                 { name: 'AJAX', level: 75, icon: Globe },
                 { name: 'DSA', level: 80, icon: Code },
-                { name: 'Networking (TCP/IP)', level: 80, icon: Globe },
+                { name: 'TCP/IP', level: 80, icon: Globe },
             ],
         }
     ];
@@ -42,7 +42,7 @@ export default function AdditionalSkill({isDark}) {
                 {skillCategories.map((category) => (
                     <div
                         key={category.category}
-                        className={`rounded-xl overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-100'} shadow-lg hover:shadow-xl transition-all duration-300`}
+                        className={`rounded-xl overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-50'} shadow-lg hover:shadow-xl transition-all duration-300`}
                     >
                         {/* Category Header */}
                         <button
@@ -90,7 +90,7 @@ export default function AdditionalSkill({isDark}) {
                                         >
                                             <div className="flex items-center mb-4">
                                                 <skill.icon className="text-blue-500 mr-3" size={24} />
-                                                <span className="font-semibold">{skill.name}</span>
+                                                <span className="font-semibold text-sm">{skill.name}</span>
                                             </div>
                                             <div className="w-full bg-gray-400 dark:bg-gray-600 rounded-full h-2">
                                                 <div

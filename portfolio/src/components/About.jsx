@@ -1,12 +1,12 @@
 import React from 'react'
-import { Mail, Phone, MapPin, Github, Linkedin, Code } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Code, Globe } from 'lucide-react';
 import Skill from './pages/Skill';
 import Education from './pages/Education';
 import AdditionalSkill from './pages/AdditionalSkill';
 import Experience from './pages/Experience';
 import Project from './pages/Project';
 
-export default function About({scrollToSection, isDark, isVisible}) {
+export default function About({ scrollToSection, isDark, isVisible }) {
     return (
         <section id="about" className="py-20">
             <div className="max-w-6xl mx-auto px-6">
@@ -28,10 +28,10 @@ export default function About({scrollToSection, isDark, isVisible}) {
                                     <Phone className="text-blue-500" size={20} />
                                     <span>+91 6205340146</span>
                                 </div>
-                                <div className="flex items-center space-x-3">
+                                {/* <div className="flex items-center space-x-3">
                                     <MapPin className="text-blue-500" size={20} />
                                     <span>Gurugram, India</span>
-                                </div>
+                                </div> */}
                                 <div className="flex items-center space-x-3">
                                     <Github className="text-blue-500" size={20} />
                                     <a href='https://github.com/SarvjeetAnand' className='hover:text-blue-500'>Github</a>
@@ -41,8 +41,13 @@ export default function About({scrollToSection, isDark, isVisible}) {
                                     <a href='https://www.linkedin.com/in/sarvjeet31/' className='hover:text-blue-500'>Linkedin</a>
                                 </div>
                                 <div className="flex items-center space-x-3">
-                                    <Code className="text-blue-500" size={20}/>
+                                    <Code className="text-blue-500" size={20} />
                                     <a href='https://leetcode.com/u/sarvjeet31072002/' className='hover:text-blue-500'>LeetCode</a>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                    <Globe className="text-blue-500" size={20} />
+                                    <a href='https://drive.google.com/file/d/1anGHZ1K-pdPB2eDcgdPkSKBFDGcruRvf/view?usp=sharing
+' className='hover:text-blue-500'>Resume</a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +58,6 @@ export default function About({scrollToSection, isDark, isVisible}) {
                             </p>
                         </div>
                     </div>
-
                     {/* Skills */}
                     <Skill isDark={isDark} />
 
@@ -67,7 +71,7 @@ export default function About({scrollToSection, isDark, isVisible}) {
                     <Education isDark={isDark} />
 
                     {/* Projects */}
-                    <Project scrollToSection={scrollToSection} isVisible={isVisible} isDark={isDark}/>
+                    <Project scrollToSection={scrollToSection} isVisible={isVisible} isDark={isDark} />
                 </div>
             </div>
         </section>

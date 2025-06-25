@@ -1,6 +1,6 @@
 import React from 'react'
 import TypedText from '../components/TypedText';
-import img from '../assest/ABC.png'
+import img from '../assest/Home.png'
 
 export default function Home({ scrollToSection, isDark, isVisible, ChevronDown }) {
     return (
