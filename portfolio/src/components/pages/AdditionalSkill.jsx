@@ -89,7 +89,7 @@ export default function AdditionalSkill({isDark}) {
                                             style={{ animationDelay: `${index * 100}ms` }}
                                         >
                                             <div className="flex items-center mb-4">
-                                                <skill.icon className="text-blue-500 mr-3" size={24} />
+                                                <skill.icon className="text-blue-500 mr-1" size={22} />
                                                 <span className="font-semibold text-sm">{skill.name}</span>
                                             </div>
                                             <div className="w-full bg-gray-400 dark:bg-gray-600 rounded-full h-2">
