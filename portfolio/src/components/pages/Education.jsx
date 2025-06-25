@@ -25,7 +25,7 @@ export default function Education({isDark}) {
                 {education.map((edu, index) => (
                     <div
                         key={index}
-                        className={`p-6 rounded-xl ${isDark ? 'bg-gray-800' : 'bg-gray-50'} hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+                        className={`p-6 rounded-xl ${isDark ? 'bg-gray-800' : 'bg-gray-100'} hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
                     >
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                             <h4 className="text-xl font-bold text-purple-500">{edu.degree}</h4>

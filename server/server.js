@@ -20,6 +20,9 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS // Use app password for Gmail
+  },
+  tls: {
+    rejectUnauthorized: false
   }
 });
 
@@ -57,6 +60,16 @@ app.post('/api/contact', async (req, res) => {
         <p>Best regards,<br>Sarvjeet Anand</p>
       `
     };
+
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error('Email failed:', error);
+      } else {
+        console.log('Email sent:', info.response);
+      }
+    });
+
 
     await transporter.sendMail(mailOptions);
     await transporter.sendMail(autoReply);

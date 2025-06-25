@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://portfolio-1-k7ir.onrender.com/';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 export const sendContactForm = async (formData) => {
   try {
