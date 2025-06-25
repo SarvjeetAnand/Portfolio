@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Code } from 'lucide-react';
 import Skill from './pages/Skill';
 import Education from './pages/Education';
 import AdditionalSkill from './pages/AdditionalSkill';
@@ -40,9 +40,12 @@ export default function About({scrollToSection, isDark, isVisible}) {
                                     <Linkedin className="text-blue-500" size={20} />
                                     <a href='https://www.linkedin.com/in/sarvjeet31/' className='hover:text-blue-500'>Linkedin</a>
                                 </div>
+                                <div className="flex items-center space-x-3">
+                                    <Code className="text-blue-500" size={20}/>
+                                    <a href='https://leetcode.com/u/sarvjeet31072002/' className='hover:text-blue-500'>LeetCode</a>
+                                </div>
                             </div>
                         </div>
-
                         <div>
                             <h3 className="text-2xl font-bold text-center mb-6">About</h3>
                             <p className="leading-relaxed text-gray-600 dark:text-gray-300">
