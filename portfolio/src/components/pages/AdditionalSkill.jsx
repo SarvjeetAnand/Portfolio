@@ -42,7 +42,7 @@ export default function AdditionalSkill({isDark}) {
                 {skillCategories.map((category) => (
                     <div
                         key={category.category}
-                        className={`rounded-xl overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-white'} shadow-lg hover:shadow-xl transition-all duration-300`}
+                        className={`rounded-xl overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-100'} shadow-lg hover:shadow-xl transition-all duration-300`}
                     >
                         {/* Category Header */}
                         <button

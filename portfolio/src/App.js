@@ -7,7 +7,6 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulate initial loading (you can replace this with actual data fetching)
     const initializeApp = async () => {
       try {
         // Add any initialization logic here
